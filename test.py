@@ -2,10 +2,10 @@
 
 import numpy as np
 
-from functions.gr_function import GR_Function
+from function_types.gr_function import PolynomialFunction
 
 def main() -> None:
-    f = GR_Function(np.array([-1, 3]), np.array([3, 2]))
+    f = PolynomialFunction(np.array([-1, 3]), np.array([3, 2]))
     g = f.get_differentiated()
 
     print(f)

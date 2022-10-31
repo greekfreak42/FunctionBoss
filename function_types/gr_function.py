@@ -1,6 +1,6 @@
 import numpy as np
 
-class GR_Function:
+class PolynomialFunction:
     def __init__(self, a: np.ndarray, m: np.ndarray) -> None:
         assert len(a) == len(m)
 
@@ -19,7 +19,7 @@ class GR_Function:
             new_a[i] += self.a[i] * self.m[i]
             new_m[i] += self.m[i] - 1
         
-        return GR_Function(new_a, new_m)
+        return PolynomialFunction(new_a, new_m)
     
 
     def __str__(self) -> str:
