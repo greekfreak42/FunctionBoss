@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from function_types.gr_function import PolynomialFunction
+from function_types.polynomial_function import PolynomialFunction
 
 def main() -> None:
     f = PolynomialFunction(np.array([-1, 3]), np.array([3, 2]))

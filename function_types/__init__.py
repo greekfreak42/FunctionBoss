@@ -1,1 +1,1 @@
-__all__ = ['gr_function']
+__all__ = ['polynomial_function']
